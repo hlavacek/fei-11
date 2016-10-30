@@ -20,8 +20,9 @@ public class MovieListTest {
 	 * Start service
 	 */
     @BeforeClass
-    public static void beforeClass() {
+    public static void beforeClass() throws Exception {
     	MovieList.main(null);
+	Thread.sleep(1000);
     }
 
     /**
